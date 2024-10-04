@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - My Website</title>
+    <title>checkout - My Website</title>
     <style>
         header{
             background-color: blanchedalmond;
@@ -20,8 +20,22 @@
             display: inline-block;
             text-decoration: none;
         }
+        lable{
+            dispay:block;
+            margin-top: 25px;
+            font-size: 1rem;
+    body{
+        font-family: sans-serif;
+    }
+    form-container:{
+        width:50%;
+        margin:auto;
+        padding:2%border:1px solid #f7f7f7;
+    }
+
+        }
     </style>
-</head>
+    </head>
 <body>
     <header>
         <h1>MY FIRST WEBSITE</h1>
@@ -36,8 +50,26 @@
                 <li><a href="checkout.html">CHECKOUT</a>
             </ul>
         </nav>
-    </head> 
-    <img src="123344.jpeg" width="800"height="400">
+    </head>
+    <div class="form-container">
+        <h1>checkout form</h1>
+        <form name="checkout form" mrthod=post onsubmit="return validate()" action="#">
+        <lable for="name">*name</lable>
+        <input type="text" id="name" placeholder="yourname">
+        <span class="errors"></span><br>
+        <lable for="email">*email</lable>
+        <input  type="text"placeholder="number"id="phone" name="phone">
+        <span class="errors"></span><br>
+        <lable for="subject">*phone</lable>
+        <textarea placeholder="your message" cols="132" rows="5"name="subject"id ="subject"></textarea>
+        <span class="errors"></span><br>
+
+        <button type="submit" value="submit"></button>
+        </form>
+        </div>
 
 
+
+
+    </div>
     </html>       
